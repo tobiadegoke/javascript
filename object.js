@@ -111,3 +111,21 @@ function phoneticLookup(val) {
      console.log(result);
   }
   phoneticLookup("charlie");
+
+
+// Testing Objects for Properties
+
+/* To check if a property on a given object exists or not, you can use the .hasOwnProperty() method. 
+    someObject.hasOwnProperty(someProperty) returns true or false 
+    depending on if the property is found on the object or not. */
+
+function checkProp(obj, prop) {
+    if (obj.hasOwnProperty(prop)){
+        console.log(obj[prop]); // return the value of the property
+    } else {
+        console.log ("Not Found");
+    };
+}
+
+checkProp({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift");
+
